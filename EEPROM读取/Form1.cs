@@ -227,7 +227,18 @@ namespace EEPROM读取
 
             serialPort1.ReadTimeout = (int)numericUpDown_ReadDataOverTime.Value * 1000;
             ClearTempData();
-            string recdata = serialPort1.ReadTo("CommandEnd");
+            string recdata;
+            try
+            {
+                recdata = serialPort1.ReadTo("CommandEnd");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"读取失败:{ex.Message}", "读取失败");
+                return;
+            }
+
+
             if (recdata.Contains("WriteDone"))
             {
                 label_Info.Text = $"向地址{data[4]:X}写入数据{data[5]:X}成功";
