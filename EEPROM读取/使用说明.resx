@@ -117,4 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>EEPROM读取程序
+l使用前需要先将配套的hex文件烧录进单片机中，可以运行“EEPROM读取程序烧写工具.exe”来将hex文件烧写进单片机。
+l本程序一般是需要配套CT107D开发板使用。
+本程序使用MIT协议
+作者B站：https://space.bilibili.com/1927497544
+本上位机程序项目地址：https://github.com/23286440/CT107D-EEPROMTools</value>
+  </data>
 </root>

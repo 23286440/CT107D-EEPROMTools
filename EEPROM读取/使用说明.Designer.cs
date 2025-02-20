@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(使用说明));
             this.label1 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
@@ -52,8 +53,7 @@
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(455, 401);
             this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "EEPROM读取程序\n使用前需要先将配套的hex文件烧录进单片机中，可以运行“EEPROM读取程序烧写工具.exe”来将hex文件烧写进单片机。\n本程序一般是" +
-    "需要配套CT107D开发板使用。\n本程序使用MIT协议\n作者B站：https://space.bilibili.com/1927497544";
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // 使用说明
             // 
